@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="b1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A2540"/>
+      <stop offset="100%" stop-color="#1E4FA8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#b1)"/>
+  <circle cx="1300" cy="200" r="320" fill="#4F8EF7" opacity="0.25"/>
+  <circle cx="240" cy="800" r="280" fill="#F4F6F8" opacity="0.08"/>
+  <text x="80" y="470" font-family="Roboto, Arial, sans-serif" font-size="72" font-weight="700" fill="#F4F6F8">Project One</text>
+  <text x="80" y="530" font-family="Roboto, Arial, sans-serif" font-size="28" font-weight="400" fill="#9FB1C3">Enterprise Workflow Platform — Banner Placeholder</text>
+</svg>
