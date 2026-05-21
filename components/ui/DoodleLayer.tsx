@@ -102,7 +102,7 @@ function SmallCircle() {
 }
 
 interface DoodleConfig {
-  el: JSX.Element;
+  el: React.JSX.Element;
   left: string;
   top: string;
   rotate: number;
