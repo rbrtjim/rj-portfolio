@@ -8,6 +8,6 @@
   <rect width="800" height="500" fill="url(#g2)"/>
   <circle cx="160" cy="120" r="180" fill="#4F8EF7" opacity="0.25"/>
   <circle cx="680" cy="420" r="160" fill="#F4F6F8" opacity="0.08"/>
-  <text x="60" y="260" font-family="Roboto, Arial, sans-serif" font-size="42" font-weight="700" fill="#F4F6F8">Project Two</text>
-  <text x="60" y="300" font-family="Roboto, Arial, sans-serif" font-size="20" font-weight="400" fill="#9FB1C3">AI-Assisted Customer Portal</text>
+  <text x="60" y="260" font-family="Roboto, Arial, sans-serif" font-size="42" font-weight="700" fill="#F4F6F8">TuoNa</text>
+  <text x="60" y="300" font-family="Roboto, Arial, sans-serif" font-size="20" font-weight="400" fill="#9FB1C3">AI Quiz Generation</text>
 </svg>

@@ -20,83 +20,96 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    slug: "project-one",
-    title: "Project One — Enterprise Workflow Platform",
+    slug: "quickserve-qr",
+    title: "QuickServe QR — QR-Based Restaurant Ordering",
     description:
-      "A modular workflow engine built on ASP.NET Core that automates approvals across 12 departments. Reduced manual processing time by 70%.",
-    tags: ["C# .NET", "ASP.NET Core", "PostgreSQL", "React"],
+      "A QR-based restaurant ordering platform. Diners scan a table QR code to browse a digital menu and place orders, while the kitchen sees every order update in real time.",
+    tags: ["Next.js 14", "ASP.NET Core", ".NET 9", "SignalR", "PostgreSQL"],
     cover: "/projects/project-1-cover.svg",
     banner: "/projects/project-1-banner.svg",
+    link: "https://quickserveqr.vercel.app/",
     problem:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. The internal approval process required emails, spreadsheets, and manual signatures across departments — slow, error-prone, and impossible to audit.",
+      "Sit-down restaurants lose time and accuracy to manual order-taking — diners wait for a server, orders are relayed by hand, and the kitchen has no live view of what is queued.",
     process:
-      "Designed a microservices architecture with an event-driven workflow engine. Built role-based dashboards in React, integrated with Active Directory, and added a full audit trail backed by PostgreSQL.",
+      "Built a Next.js + TypeScript ordering frontend backed by an ASP.NET Core (.NET 9) Web API. SignalR pushes new orders and status changes to a live kitchen dashboard. The app runs on SQLite locally and PostgreSQL (Supabase) in production, with role-based access for Admin, Kitchen, and Customer.",
     result:
-      "Cut approval times from 5 days to under 1. Audit-ready by default. Adopted by 12 departments and 400+ users in the first quarter.",
+      "Diners order straight from their phone by scanning a table QR, the kitchen tracks tickets on a real-time dashboard, and admins manage the menu, tables, and analytics. A one-click live demo lets anyone explore the Admin, Kitchen, or Customer view instantly.",
     gallery: [
-      { src: "/projects/project-1-cover.svg", alt: "Dashboard overview" },
-      { src: "/projects/project-1-banner.svg", alt: "Workflow detail" },
-      { src: "/projects/project-1-cover.svg", alt: "Mobile view" },
+      { src: "/projects/project-1-cover.svg", alt: "Digital menu" },
+      {
+        src: "/projects/project-1-banner.svg",
+        alt: "Real-time kitchen dashboard",
+      },
+      { src: "/projects/project-1-cover.svg", alt: "Admin analytics" },
     ],
   },
   {
-    slug: "project-two",
-    title: "Project Two — AI-Assisted Customer Portal",
+    slug: "tuona",
+    title: "TuoNa — AI Quiz Generation from PDFs & URLs",
     description:
-      "A customer self-service portal augmented with an LLM-powered support assistant. Deflected 40% of tier-1 tickets in pilot.",
-    tags: ["Next.js", "TypeScript", "OpenAI", "Tailwind CSS"],
+      "An AI-powered study tool that turns PDFs and web pages into quizzes. Upload a document or paste a URL, and TuoNa extracts the text, generates a scored quiz, and tracks your progress.",
+    tags: ["React", "Vite", "TypeScript", "ASP.NET Core", "Groq AI"],
     cover: "/projects/project-2-cover.svg",
     banner: "/projects/project-2-banner.svg",
+    link: "https://tuo-na.vercel.app/",
     problem:
-      "Support tickets piled up with repetitive questions. Customers waited hours for answers that already lived in documentation.",
+      "Turning study material into practice questions is slow and manual — learners re-read PDFs and articles with no quick way to test what they actually retained.",
     process:
-      "Built a Next.js portal with a retrieval-augmented chat assistant. Indexed the knowledge base, added guardrails, and instrumented every interaction for QA review.",
+      "Built a React 18 + Vite + TypeScript frontend with an ASP.NET Core 9 Web API secured by JWT. The backend extracts text from uploaded PDFs and scraped URLs, then calls an OpenAI-compatible Groq model (llama-3.3-70b-versatile) to generate quizzes. Data persists in SQLite by default, with opt-in PostgreSQL via EF Core.",
     result:
-      "Deflected 40% of incoming tier-1 tickets. Average response time dropped from 4 hours to under 30 seconds for AI-handled queries.",
+      "A complete study loop: upload or link a source, get an AI-generated quiz, take it, see it scored, and review history and analytics. A built-in stub mode keeps the app fully usable even without an AI key.",
     gallery: [
-      { src: "/projects/project-2-cover.svg", alt: "Portal home" },
-      { src: "/projects/project-2-banner.svg", alt: "AI chat in action" },
-      { src: "/projects/project-2-cover.svg", alt: "Admin analytics" },
+      { src: "/projects/project-2-cover.svg", alt: "Upload a PDF" },
+      { src: "/projects/project-2-banner.svg", alt: "Take a quiz" },
+      {
+        src: "/projects/project-2-cover.svg",
+        alt: "Quiz history and analytics",
+      },
     ],
   },
   {
-    slug: "project-three",
-    title: "Project Three — Real-time Analytics Dashboard",
+    slug: "jenjoy-store",
+    title: "JenJoy Store Management — Inventory & POS System",
     description:
-      "A real-time analytics dashboard streaming millions of events daily. Built with SignalR, React, and a custom time-series pipeline.",
-    tags: ["React", "SignalR", "C# .NET", "SQL Server"],
+      "A web-based inventory and store management system for a small retail business — product tracking, stock movements, suppliers, customer orders, and sales with receipts, profit reporting, and OCR receipt scanning.",
+    tags: ["Next.js 14", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS"],
     cover: "/projects/project-3-cover.svg",
     banner: "/projects/project-3-banner.svg",
+    link: "https://jj-store-management.vercel.app/",
     problem:
-      "Stakeholders needed live insight into operational metrics, but the existing reports refreshed only once a day — too late to react to incidents.",
+      "A small retailer juggled inventory, suppliers, orders, and sales across spreadsheets and paper — stock counts drifted, low-stock items slipped through, and adding products meant typing every line by hand.",
     process:
-      "Designed a streaming pipeline with SignalR pushing aggregated events to a React dashboard. Added drill-downs, alerts, and a shareable URL state.",
+      "Built a Next.js 14 App Router app with a Prisma + PostgreSQL data model spanning products, stock movements, suppliers, orders, and sales. Authentication uses JWT sessions stored in httpOnly cookies. Tesseract.js runs OCR in the browser so photographed receipts and order slips become editable line items.",
     result:
-      "Mean time to detection dropped 80%. Operations teams now resolve incidents before customers notice them.",
+      "One system covers the full retail lifecycle — a dashboard with low-stock alerts, full product CRUD, stock in/out, supplier and order management, and sales that generate printable receipts and profit reports. OCR bulk-add removes most of the manual data entry.",
     gallery: [
-      { src: "/projects/project-3-cover.svg", alt: "Live metrics" },
-      { src: "/projects/project-3-banner.svg", alt: "Drill-down view" },
-      { src: "/projects/project-3-cover.svg", alt: "Alert configuration" },
+      {
+        src: "/projects/project-3-cover.svg",
+        alt: "Dashboard and low-stock alerts",
+      },
+      { src: "/projects/project-3-banner.svg", alt: "Product management" },
+      { src: "/projects/project-3-cover.svg", alt: "Sales and receipts" },
     ],
   },
   {
-    slug: "project-four",
-    title: "Project Four — Low-Code Internal Tools Suite",
+    slug: "rj-portfolio",
+    title: "RJ Portfolio — Personal Site with rj.ai Assistant",
     description:
-      "A suite of internal tools delivered on Microsoft Power Platform with custom Azure Functions for heavy logic. Saved 200+ hours per month.",
-    tags: ["Power Apps", "Power Automate", "Azure Functions", "C#"],
+      "This portfolio site — a Next.js 15 application featuring rj.ai, a Messenger-style AI chatbot that answers questions about my background and experience using the Groq API.",
+    tags: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Groq AI"],
     cover: "/projects/project-4-cover.svg",
     banner: "/projects/project-4-banner.svg",
+    link: "https://jim-portfolio-gjrz.vercel.app/",
     problem:
-      "Operations teams relied on a patchwork of spreadsheets and emails. IT couldn't keep up with bespoke tool requests.",
+      "A portfolio should do more than list experience — visitors and recruiters often have a specific question and no fast way to get it answered without reading every section.",
     process:
-      "Stood up a Power Platform foundation, paired low-code apps with Azure Functions for the complex bits, and trained champions in each department to own their own apps.",
+      "Built with Next.js 15, React 19, and Tailwind CSS, with light/dark theming and motion. Added rj.ai, a floating chat widget that posts to a server-side Groq route (llama-3.3-70b-versatile); the assistant answers in the first person from a knowledge base built from my resume and project data.",
     result:
-      "Shipped 14 internal apps in 6 months. Saved an estimated 200+ person-hours per month and freed IT to focus on strategic work.",
+      "A polished, responsive portfolio where visitors can either browse normally or simply ask rj.ai — getting instant, grounded answers about my skills, experience, and projects, with off-topic questions politely declined.",
     gallery: [
-      { src: "/projects/project-4-cover.svg", alt: "App gallery" },
-      { src: "/projects/project-4-banner.svg", alt: "Workflow automation" },
-      { src: "/projects/project-4-cover.svg", alt: "Admin console" },
+      { src: "/projects/project-4-cover.svg", alt: "Hero and overview" },
+      { src: "/projects/project-4-banner.svg", alt: "Projects section" },
+      { src: "/projects/project-4-cover.svg", alt: "rj.ai chat assistant" },
     ],
   },
 ];
