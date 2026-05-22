@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
+import { RjAiChat } from "@/components/ui/RjAiChat";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -43,6 +44,7 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <RjAiChat />
         </ThemeProvider>
       </body>
     </html>
