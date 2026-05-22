@@ -79,7 +79,7 @@ export function About() {
 
             <Reveal delay={0.25}>
               <a
-                href="/resume.pdf"
+                href="/RobertJimPlacencia_Resume.pdf"
                 download
                 className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/20 transition hover:-translate-y-0.5 hover:shadow-xl"
               >
