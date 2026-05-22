@@ -113,7 +113,7 @@ export function RjAiChat() {
             exit={{ opacity: 0, scale: 0.85, y: 24 }}
             transition={{ type: "spring", stiffness: 320, damping: 28 }}
             style={{ transformOrigin: "bottom right" }}
-            className="fixed bottom-24 right-5 z-[90] flex h-[520px] w-[calc(100vw-2.5rem)] max-w-[370px] flex-col overflow-hidden rounded-2xl border border-border bg-bg shadow-2xl"
+            className="fixed bottom-24 right-5 z-[90] flex h-[520px] max-h-[calc(100dvh-7rem)] w-[calc(100vw-2.5rem)] max-w-[370px] flex-col overflow-hidden rounded-2xl border border-border bg-bg shadow-2xl"
           >
             {/* Header */}
             <div className="flex items-center gap-3 bg-accent px-4 py-3 text-white">
@@ -137,7 +137,7 @@ export function RjAiChat() {
             {/* Messages */}
             <div
               ref={scrollRef}
-              className="flex-1 space-y-3 overflow-y-auto bg-surface/40 px-4 py-4"
+              className="min-h-0 flex-1 space-y-3 overflow-y-auto bg-surface/40 px-4 py-4"
             >
               {messages.map((m, i) => (
                 <Bubble key={i} role={m.role} content={m.content} />
