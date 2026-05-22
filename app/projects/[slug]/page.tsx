@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import { PROJECTS, getProject } from "@/lib/projects";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionBackground } from "@/components/ui/SectionBackground";
@@ -60,6 +60,18 @@ export default async function ProjectPage({ params }: PageProps) {
                 </span>
               ))}
             </div>
+
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/20 transition hover:-translate-y-0.5 hover:shadow-xl"
+              >
+                Visit Live Site
+                <ExternalLink className="h-4 w-4" />
+              </a>
+            )}
           </Reveal>
         </div>
       </div>
