@@ -8,6 +8,6 @@
   <rect width="1600" height="900" fill="url(#b4)"/>
   <circle cx="400" cy="680" r="320" fill="#1E4FA8" opacity="0.4"/>
   <circle cx="1320" cy="220" r="280" fill="#F4F6F8" opacity="0.1"/>
-  <text x="80" y="470" font-family="Roboto, Arial, sans-serif" font-size="72" font-weight="700" fill="#F4F6F8">RJ Portfolio</text>
-  <text x="80" y="530" font-family="Roboto, Arial, sans-serif" font-size="28" font-weight="400" fill="#E2E8EF">Personal Site with rj.ai</text>
+  <text x="80" y="470" font-family="Roboto, Arial, sans-serif" font-size="72" font-weight="700" fill="#F4F6F8">AI Job Tracker</text>
+  <text x="80" y="530" font-family="Roboto, Arial, sans-serif" font-size="28" font-weight="400" fill="#E2E8EF">Kanban + Groq AI</text>
 </svg>

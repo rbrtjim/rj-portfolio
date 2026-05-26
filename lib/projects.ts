@@ -92,24 +92,23 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    slug: "rj-portfolio",
-    title: "RJ Portfolio — Personal Site with rj.ai Assistant",
+    slug: "ai-job-tracker",
+    title: "AI Job Application Tracker — Kanban + Groq AI",
     description:
-      "This portfolio site — a Next.js 15 application featuring rj.ai, a Messenger-style AI chatbot that answers questions about my background and experience using the Groq API.",
-    tags: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Groq AI"],
+      "A full-stack job application tracker with a drag-and-drop Kanban board and Groq AI features that tailor your resume, stream cover letters, and score your fit against each job description.",
+    tags: ["Next.js 14", "Groq AI", "Prisma", "Supabase", "NextAuth"],
     cover: "/projects/project-4-cover.svg",
     banner: "/projects/project-4-banner.svg",
-    link: "https://jim-portfolio-gjrz.vercel.app/",
     problem:
-      "A portfolio should do more than list experience — visitors and recruiters often have a specific question and no fast way to get it answered without reading every section.",
+      "Job seekers juggle applications across spreadsheets and inboxes, and rewriting a resume and cover letter for every role is slow — there is no quick way to see which applications are stalled or how well you actually match a posting.",
     process:
-      "Built with Next.js 15, React 19, and Tailwind CSS, with light/dark theming and motion. Added rj.ai, a floating chat widget that posts to a server-side Groq route (llama-3.3-70b-versatile); the assistant answers in the first person from a knowledge base built from my resume and project data.",
+      "Built a Next.js 14 App Router app with NextAuth (email/password + optional Google OAuth) and a Prisma schema on Supabase Postgres. A @dnd-kit Kanban board moves applications across stages, while server routes call Groq (llama-3.3-70b-versatile) via the Vercel AI SDK — streaming cover letters with streamText and returning structured JSON for match scores. Upstash Ratelimit guards the AI routes and Recharts powers the analytics dashboard.",
     result:
-      "A polished, responsive portfolio where visitors can either browse normally or simply ask rj.ai — getting instant, grounded answers about my skills, experience, and projects, with off-topic questions politely declined.",
+      "One workspace covers the full job-search loop — drag-and-drop status tracking from Applied to Offer, AI-tailored resume bullets and streaming cover letters per role, a 0–100 fit score with strengths and gaps, and an analytics view for response rate and weekly volume. A demo mode lets visitors try every feature without signing up.",
     gallery: [
-      { src: "/projects/project-4-cover.svg", alt: "Hero and overview" },
-      { src: "/projects/project-4-banner.svg", alt: "Projects section" },
-      { src: "/projects/project-4-cover.svg", alt: "rj.ai chat assistant" },
+      { src: "/projects/project-4-cover.svg", alt: "Kanban application board" },
+      { src: "/projects/project-4-banner.svg", alt: "AI cover letter and match score" },
+      { src: "/projects/project-4-cover.svg", alt: "Analytics dashboard" },
     ],
   },
 ];
