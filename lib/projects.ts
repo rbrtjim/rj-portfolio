@@ -27,7 +27,7 @@ export const PROJECTS: Project[] = [
     tags: ["Next.js 14", "ASP.NET Core", ".NET 9", "SignalR", "PostgreSQL"],
     cover: "/projects/quickserve_qr_cover.svg",
     banner: "/projects/quickserve_qr_cover.svg",
-    link: "https://quickserveqr.vercel.app/",
+    link: "https://quickserveqr-h6nq.vercel.app/",
     problem:
       "Sit-down restaurants lose time and accuracy to manual order-taking — diners wait for a server, orders are relayed by hand, and the kitchen has no live view of what is queued.",
     process:
@@ -35,12 +35,12 @@ export const PROJECTS: Project[] = [
     result:
       "Diners order straight from their phone by scanning a table QR, the kitchen tracks tickets on a real-time dashboard, and admins manage the menu, tables, and analytics. A one-click live demo lets anyone explore the Admin, Kitchen, or Customer view instantly.",
     gallery: [
-      { src: "/projects/quickserve_qr_cover.svg", alt: "Digital menu" },
+      { src: "/projects/quickserve_screens/quickserve_admin_dashboard.png", alt: "Admin dashboard" },
       {
-        src: "/projects/quickserve_qr_cover.svg",
+        src: "/projects/quickserve_screens/quickserve_kitchen_dashboard.png",
         alt: "Real-time kitchen dashboard",
       },
-      { src: "/projects/quickserve_qr_cover.svg", alt: "Admin analytics" },
+      { src: "/projects/quickserve_screens/quickserve_qrcode.png", alt: "Table QR code" },
     ],
   },
   {
@@ -59,11 +59,11 @@ export const PROJECTS: Project[] = [
     result:
       "A complete study loop: upload or link a source, get an AI-generated quiz, take it, see it scored, and review history and analytics. A built-in stub mode keeps the app fully usable even without an AI key.",
     gallery: [
-      { src: "/projects/tuona_cover_photo.svg", alt: "Upload a PDF" },
-      { src: "/projects/tuona_cover_photo.svg", alt: "Take a quiz" },
+      { src: "/projects/tuona_screens/tuona_landingpage.png", alt: "Landing page" },
+      { src: "/projects/tuona_screens/tuona_quizpage.png", alt: "Take a quiz" },
       {
-        src: "/projects/tuona_cover_photo.svg",
-        alt: "Quiz history and analytics",
+        src: "/projects/tuona_screens/tuona_dashboard.png",
+        alt: "Dashboard and analytics",
       },
     ],
   },
@@ -84,11 +84,11 @@ export const PROJECTS: Project[] = [
       "One system covers the full retail lifecycle — a dashboard with low-stock alerts, full product CRUD, stock in/out, supplier and order management, and sales that generate printable receipts and profit reports. OCR bulk-add removes most of the manual data entry.",
     gallery: [
       {
-        src: "/projects/jenjoy_cover_photo.svg",
+        src: "/projects/jjstore_screens/jjstore_dashboard.png",
         alt: "Dashboard and low-stock alerts",
       },
-      { src: "/projects/jenjoy_cover_photo.svg", alt: "Product management" },
-      { src: "/projects/jenjoy_cover_photo.svg", alt: "Sales and receipts" },
+      { src: "/projects/jjstore_screens/jjstore_products.png", alt: "Product management" },
+      { src: "/projects/jjstore_screens/jjstore_login.png", alt: "Login" },
     ],
   },
   {
@@ -99,6 +99,7 @@ export const PROJECTS: Project[] = [
     tags: ["Next.js 14", "Groq AI", "Prisma", "Supabase", "NextAuth"],
     cover: "/projects/ai_job_tracker_cover_photo.svg",
     banner: "/projects/ai_job_tracker_cover_photo.svg",
+    link: "https://ai-job-application-tracker-lemon.vercel.app/login",
     problem:
       "Job seekers juggle applications across spreadsheets and inboxes, and rewriting a resume and cover letter for every role is slow — there is no quick way to see which applications are stalled or how well you actually match a posting.",
     process:
@@ -106,9 +107,9 @@ export const PROJECTS: Project[] = [
     result:
       "One workspace covers the full job-search loop — drag-and-drop status tracking from Applied to Offer, AI-tailored resume bullets and streaming cover letters per role, a 0–100 fit score with strengths and gaps, and an analytics view for response rate and weekly volume. A demo mode lets visitors try every feature without signing up.",
     gallery: [
-      { src: "/projects/ai_job_tracker_cover_photo.svg", alt: "Kanban application board" },
-      { src: "/projects/ai_job_tracker_cover_photo.svg", alt: "AI cover letter and match score" },
-      { src: "/projects/ai_job_tracker_cover_photo.svg", alt: "Analytics dashboard" },
+      { src: "/projects/jobapplicationtracker_screens/jobapplicationtracker_dashboard.png", alt: "Kanban application board" },
+      { src: "/projects/jobapplicationtracker_screens/jobapplicationtracker_newapplication.png", alt: "New application form" },
+      { src: "/projects/jobapplicationtracker_screens/jobapplicationtracker_login.png", alt: "Login" },
     ],
   },
 ];
